@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PT NIF validator</title>
+    <script src="nifvalidator.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-200">
+    <div class="container mx-auto">
+      <form
+        class="flex flex-col h-screen items-center place-content-center mx-auto max-w-sm p-8"
+      >
+        <h1 class="text-4xl text-center pb-20">Validador NIF</h1>
+        <input
+          class="p-2 h-9 w-9 w-full text-center border-gray-700 rounded-md shadow-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-xl"
+          type="text"
+          name="nif"
+          id="nif"
+          oninput="OnlyNum()"
+          onkeydown="OnlyNum()"
+          maxlength="9"
+        />
+        <div class="text-center text-sm rounded p-3 mt-8 bg-slate-50 w-full">
+          <b id="result">Por favor insira 9 dígitos (0-9)</b>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
