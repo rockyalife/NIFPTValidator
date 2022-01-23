@@ -1,2 +1,4 @@
-# NIFPTValidator
-Portuguese NIF Validator. Technologies: Vanilla Javascript | HTML | Tailwind
+# NIF PT Validator
+Portuguese NIF Realtime Validator. 
+
+Technologies used: Vanilla Javascript | HTML | Tailwind
